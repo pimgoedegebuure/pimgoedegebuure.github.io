@@ -4,9 +4,36 @@ body{
 
 }
 *{
-
-
 	color: white;
+}
+img{
+	overflow: scroll;
+}
+.badge{
+	font-size: 0.8rem;
+	font-weight: 300;
+	padding: 0.5rem;
+	margin:0.1rem;
+	margin-bottom: .5rem;
+}
+.badge:hover{
+	font-style: italic;
+}
+.badge-primary{
+	background-color: #231daf;
+}
+.headline{
+	font-size: 1.5rem;
+	text-align: center;
+	max-width: 25rem;
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	color: #bfbfbf;
+}
+.headline > strong{
+	font-size: 2rem;
+
 }
 .card{
 	background: #2f2f2f;
@@ -15,7 +42,11 @@ body{
 .neutral{
 	background:transparent;
 }
+.card-img{
+	max-height: 20rem;
+}
 
 .contact{
-	margin-top: 2em;
+	align-self: center;
+	margin: 2rem auto 0rem auto;
 }
