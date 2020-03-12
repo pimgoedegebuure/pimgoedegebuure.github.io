@@ -10,6 +10,7 @@ body{
 }
 .card{
 	background: #2f2f2f;
+	margin-bottom: 2rem;
 }
 .neutral{
 	background:transparent;
