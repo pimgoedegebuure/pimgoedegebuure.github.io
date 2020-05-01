@@ -12,7 +12,9 @@ body {
 .card  a{
 	width:100%;
 }
-
+.contactInfo i{
+  margin-bottom:1em;
+}
 .material-icons {
   color: white;
 }
