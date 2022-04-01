@@ -36,9 +36,9 @@
   <header class="d-flex justify-content-center py-3">
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Mijn werk</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Over mij</a></li>
+      <li class="nav-item"><a href="#projecten" class="nav-link">Mijn werk</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
     </ul>
   </header>
 
@@ -52,8 +52,8 @@
 
 
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="/img/DSC00002.JPG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      <div class=" col-sm-12 col-m-6 col-lg-4 mx-auto">
+        <img src="/img/DSC00002.JPG" class="d-block mx-3 mx-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h2 class="display-5 fw-bold lh-1 mb-3">Pim Goedegebuure - UX/UI designer</h2>
@@ -69,7 +69,7 @@
     <!-- Recente projecten -->
     <div class="album py-5">
       <div class="container">
-        <h2 class="py-3">Recente projecten</h2>
+        <h2 class="py-3" id="projecten">Recente projecten</h2 >
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <!-- Van der Valk Schiphol - Afstudeerproject -->
           <div class="col"  id="Valk">
@@ -80,7 +80,7 @@
                 <h5 class="card-title">Van der Valk</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">Bekijk</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">meer informatie</a></button>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@
                 <h5 class="card-title">PostNL</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">Bekijk</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">meer informatie</a></button>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@
                 <h5 class="card-title">Online Marketing</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">Bekijk</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">meer informatie</a></button>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
                 <h5 class="card-title">Flixbus</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">Bekijk</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="html/flixbus.html" class="btn btn-sm">meer informatie</a></button>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@
       <div class="container">
         <h2 class="py-3">Lopende projecten</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <!-- Fakeclient -->
+          <!-- JobHuntin -->
           <div class="col">
             <div class="card shadow-sm">
               <source class="card-img" srcset="img/cover/Postnl3@2x.webp" type="image/webp">
@@ -153,13 +153,13 @@
                 <h5 class="card-title">Job Huntin</h5>
                 <p class="card-text">Ik sta open voor aanbiedingen! Momenteel ben ik op zoek naar een baan als <u>UX researcher</u> of in de <u>conversie optimalisatie</u> </p>
                 <div class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><a</button>
+                    <button type="button" class="btn btn-primary">Neem contact op </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Magic mirror -->
-          <div class="col">
+          <!-- Hidden -Magic mirror  -->
+        <div class="col" hidden>
             <div class="card shadow-sm">
               <source class="card-img" srcset="img/cover/Postnl3@2x.webp" type="image/webp">
               <img class="card-img" src="img/cover/Postnl3@2x.jpg" alt="Alt Text!">
@@ -175,6 +175,8 @@
         </div>
         </div>
         </div>
+
+      
 
         <!-- Contact 2.0 -->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
