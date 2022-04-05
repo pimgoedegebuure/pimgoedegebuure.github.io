@@ -3,6 +3,10 @@
     background-color:lightslategrey;
 }
 
+.card{
+   margin-bottom: 1rem;
+   /* max-width: 75%; */
+}
 
 
 
@@ -12,3 +16,11 @@
     background-color: black;
     color: white;
 }
+
+/* 
+.navbar-toggler-icon:active{
+    transform: rotate(90deg);
+}
+.navbar-toggler-icon:hover{
+    transform: rotate(90deg);
+} */
