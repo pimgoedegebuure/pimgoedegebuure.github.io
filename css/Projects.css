@@ -24,3 +24,23 @@
 .navbar-toggler-icon:hover{
     transform: rotate(90deg);
 } */
+
+li.list-group-item {
+    display: flex;
+  }
+  
+  li.list-group-item i {
+    margin-left: -20px;
+  }
+  
+  li.list-group-item div {
+    margin-left: 10px;
+  }
+
+
+.Projectcard{
+  min-height: 200px;
+  max-height: 250px;
+
+}
+  
