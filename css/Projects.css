@@ -29,13 +29,13 @@ li.list-group-item {
     display: flex;
   }
   
-  li.list-group-item i {
+  /* li.list-group-item i {
     margin-left: -20px;
   }
   
   li.list-group-item div {
     margin-left: 10px;
-  }
+  } */
 
 
 .Projectcard{
@@ -45,4 +45,17 @@ li.list-group-item {
 }
 
 .navbar .nav-item:hover .dropdown-menu{ display: block; }
-  
+
+.underline{
+  border-bottom: 12px solid gray;
+}
+.list-group-item{
+  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+  max-width: 25em;
+}
+li.list-group-item i {
+    padding-right: 1em;
+  }

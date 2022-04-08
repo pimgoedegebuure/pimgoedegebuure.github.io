@@ -14,10 +14,10 @@
     <!-- Contact Form - Pageclip stylesheet -->
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   </head>
-  <body class="px-3">
+  <body class="">
     <!-- Nav Open -->
   
-    <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+    <nav class="px-0 navbar-fluid navbar-expand-sm navbar-dark bg-dark sticky-top py-2  ">
         <div class="container-fluid">
           <!-- <a class="navbar-brand" href="#">Home</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,11 +68,11 @@
           </div>
       </div>
     <!-- Mijn werk -->
-      <div class="container-fluid">
+      <div class="container-fluid px-3">
           <h2 id="Werk">Mijn werk</h2>
-            <div class="row row-cols-1 row-cols-md-3 mb-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mb-3">
             <!-- Card Start -->
-            <div class="col mw-50" id="Valk">
+            <div class="col " id="Valk">
                 <div class="card shadow-sm">
                     <source class="card-img" srcset="https://via.placeholder.com/452" type="image/webp">
                     <img class="card-img" src="https://via.placeholder.com/452" alt="Alt Text!" class="img-fluid">
@@ -114,8 +114,7 @@
                       </div>
                  </div>
              </div>             
-         </div>
-         <div class="row row-cols-1 row-cols-md-3">
+         
             <div class="col" id="Valk">
                 <div class="card shadow-sm">
                     <source class="card-img" srcset="https://via.placeholder.com/452" type="image/webp">
@@ -133,13 +132,13 @@
          </div>
         </div>
 
-        <div class="container-fluid mt-5" id="contactDetails">
+        <div class="container-fluid mt-5 px-3" id="contactDetails">
             <div class="d-flex flex-column flex-sm-row">
-                <div class="col-12 col-sm-5">
-                    <h2 id="Contact">Contact</h2>
+                <div class=" col-12 col-sm-6 pe-sm-5 mb-5">
+                    <h2 id="Contact">Contactgegevens</h2>
 
-                    <p>Contact us and we'll get back to you as soon as possible.</p>
-                    <ul class="list-group list-group-flush">
+                    <p>Stuur me gerust een berichtje op LinkedIn, via de email of een belletje. Mocht je het makkelijker vinden kan je ook het contactformulier gebruiken en dan kom ik z.s.m bij je terug. </p>
+                    <ul class="list-group">
                       <li class="list-group-item">
                         <i class="bi bi-telephone-fill"></i>
                         <div><a href="tel:0634964997"></a>+31 (0) 6 3496 4997<div>
@@ -152,26 +151,29 @@
                         <i class="bi bi-linkedin"></i>
                         <div><a href="https://www.linkedin.com/in/pim-goedegebuure/">/in/pim-goedegebuure/</a><div>
                       </li>
+                      
+                     
                     </ul>
                 </div>
-                <div class="col  px-sm-5 mt-5 mt-sm-0">
+                <div class="col-12 col-sm-6 ps-sm-3 ">
+                  <h2>Contact formulier</h2>
                     <form action="https://send.pageclip.co/3r0PfcLYWseY70TLuURSZfohtSxbSAun" class="pageclip-form" method="post" id="contactForm">
                         <!-- Name input -->
                         <div class="mb-3">
-                            <label class="form-label" for="name">Name</label>
-                            <input name="naam afzender" class="form-control" id="name" type="text" placeholder="Name" />
+                            <label class="form-label" for="name">Naam</label>
+                            <input name="naam afzender" class="form-control" id="name" type="text" placeholder="Naam en/of bedrijf" />
                         </div>
                     
                         <!-- Email address input -->
                         <div class="mb-3">
-                            <label class="form-label" for="emailAddress">Email Address</label>
-                            <input name="Emailadress" class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                            <label class="form-label" for="emailAddress">Email</label>
+                            <input name="Emailadress" class="form-control" id="emailAddress" type="email" placeholder="Bijv. pimgoedegebuure@gmail.com" />
                         </div>
                     
                         <!-- Message input -->
                         <div class="mb-3">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea name="Bericht" class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                            <label class="form-label" for="message">Bericht</label>
+                            <textarea name="Bericht" class="form-control" id="message" type="text" placeholder="Wat wil je graag kwijt?" style="height: 10rem;"></textarea>
                         </div>
                     
                         <!-- Form submit button -->
