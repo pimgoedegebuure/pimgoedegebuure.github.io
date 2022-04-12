@@ -59,3 +59,6 @@ li.list-group-item {
 li.list-group-item i {
     padding-right: 1em;
   }
+  .PrjImage{
+    max-width: 125px!important;
+  }
