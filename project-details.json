@@ -86,7 +86,7 @@
       "sections": [
         {
           "sectionTitle": "Overview",
-          "content": "Tijdens dit project is er uitvoerig onderzoek gedaan naar gestrande Reizigers van Luchthaven Schiphol. Deze reizigers moeten na het annuleren van hun vlucht ondergebracht worden bij onder andere hotel Van der Valk Schiphol. </br> Het doel van dit project is te onderzoeken hoe we deze ervaring aanzienlijk kunnen verbeteren en de gestrande reizigers een verbeterde ervaring kunnen bieden in deze chaotische momenten. </br></br> Dit is gedaan aan de hand van de volgende design challenge: </br> <quote>[Insert challenge here]</quote>",
+          "content": "Tijdens dit project is er uitvoerig onderzoek gedaan naar gestrande Reizigers van Luchthaven Schiphol. Deze reizigers moeten na het annuleren van hun vlucht ondergebracht worden bij onder andere hotel Van der Valk Schiphol. </br> Het doel van dit project is te onderzoeken hoe we deze ervaring aanzienlijk kunnen verbeteren en de gestrande reizigers een verbeterde ervaring kunnen bieden in deze chaotische momenten. </br></br> Dit is gedaan aan de hand van de volgende design challenge: </br> <quote class='lead'>[Insert challenge here]</quote>",
           "images": []
         },
         {
@@ -120,15 +120,21 @@
           "images": []
         },
         {
-          "sectionTitle": "Final Design Solutions",
-          "content": "Final design solutions and impact.",
+          "sectionTitle": "Usability Testing",
+          "content": "Omdat de reizigers zelf niet in staat waren deel te nemen aan het gebruikersonderzoek heb ik gebruik gemaakt van het Van der Valk research panel. Door middel van een oproep in de nieuwsbrief naar deze groep hebben we 8 personen gevonden die deel genomen aan dit onderzoek. Zij hadden allemaal hun eigen ervaring met soortgelijke situaties waarbij ook zij wel eens gestrand waren tijdens hun reis. Hierdoor konden ze zich beter verplaatsen in de situatie van onze doelgroep.",
           "images": []
         },
         {
-          "sectionTitle": "Usability Testing Results",
-          "content": "Usability testing results and feedback.",
+          "sectionTitle": "<h5>Resultaten</h5>",
+          "content": "Omdat de reizigers zelf niet in staat waren deel te nemen aan het gebruikersonderzoek heb ik gebruik gemaakt van het Van der Valk research panel. Door middel van een oproep in de nieuwsbrief naar deze groep hebben we 8 personen gevonden die deel genomen aan dit onderzoek. Zij hadden allemaal hun eigen ervaring met soortgelijke situaties waarbij ook zij wel eens gestrand waren tijdens hun reis. Hierdoor konden ze zich beter verplaatsen in de situatie van onze doelgroep.",
+          "images": []
+        },
+        {
+          "sectionTitle": "Final Design Solutions",
+          "content": "Van het uiteindelijke design is een Interactief prototype gemaakt met Figma, deze bevat uiteraard fictieve data maar moet een weerspiegeling zijn van de realiteit.</br> <iframe style='border: 1px solid rgba(0, 0, 0, 0.1);' width='100%' height='600px' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMxxk6GQHWYZQf8t67S1mUo%2F0.-Voucher-%2526-Activities-Combined%3Fpage-id%3D333%253A26345%26type%3Ddesign%26node-id%3D346-16806%26viewport%3D520%252C82%252C0.1%26t%3DIYcUI33YlkE0uEpN-1%26scaling%3Dscale-down%26starting-point-node-id%3D346%253A16806%26show-proto-sidebar%3D1%26mode%3Ddesign' allowfullscreen></iframe>",
           "images": []
         }
+        
       ]
     },
     "TankDelen": {
