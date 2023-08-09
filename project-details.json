@@ -37,11 +37,13 @@
       "sections": [
         {
           "sectionTitle": "Overview",
-          "content": "Project 1 overview and description.sdfsfsdfdssdProject 1 overview and description.sdfsfsdfdssdProject 1 overview and description.sdfsfsdfdssdProject 1 overview and description.sdfsfsdfdssd",
-         "images": [{
-          "src": "afbeeldingen/FlixbusTest.jpg",
-          "alt": "Image 3"
-        }]
+          "content": "",
+          "images": [
+            {
+              "src": "afbeeldingen/FlixbusTest.jpg",
+              "alt": "Image 3"
+            }
+          ]
         },
         {
           "sectionTitle": "Not so Process",
@@ -51,14 +53,16 @@
         {
           "sectionTitle": "User Research Insights",
           "content": "Waar een standaard website bestaat uit DIV elementen, Marging, Paddings, background images en ga zo maar door is een HTML email opgebouwd met techniek uit het jaar 0. Het gebruik maken van tables om zo de vormgeving van je email te maken. Hierbij is het ook nog eens van belang om styling inline toe te voegen en zelfs dan ben je niet gegarandeerd dat alles werkt. Hierdoor was dit voor mij een lastig project om alle ins & outs over te leren.",
-          "images": [{
+          "images": [
+            {
               "src": "afbeeldingen/FlixbusTest.jpg",
               "alt": "Image 3"
             },
             {
               "src": "afbeeldingen/FlixbusTest.jpg",
               "alt": "Image 3"
-            }]
+            }
+          ]
         },
         {
           "sectionTitle": "Challenges and Solutions",
@@ -78,21 +82,31 @@
       ]
     },
     "ValkDigital": {
-      "title": "GPT AutomationTest 1",
+      "title": "Gestrande Reizigers Van der Valk Schiphol",
       "sections": [
         {
           "sectionTitle": "Overview",
-          "content": "Project 1 overview and description.",
+          "content": "Tijdens dit project is er uitvoerig onderzoek gedaan naar gestrande Reizigers van Luchthaven Schiphol. Deze reizigers moeten na het annuleren van hun vlucht ondergebracht worden bij onder andere hotel Van der Valk Schiphol. </br> Het doel van dit project is te onderzoeken hoe we deze ervaring aanzienlijk kunnen verbeteren en de gestrande reizigers een verbeterde ervaring kunnen bieden in deze chaotische momenten. </br></br> Dit is gedaan aan de hand van de volgende design challenge: </br> <quote>[Insert challenge here]</quote>",
           "images": []
         },
         {
           "sectionTitle": "Design Process",
-          "content": "Design process for Project 1. <strong>This was very hard to do</strong>",
+          "content": "Tijdens dit project is gebruik gemaakt van de double diamon methode. Door eerst onderzoek te doen naar de eindgebruikers, het probleem en de huidige situatie en hier vervolgens inzichten uit te halen. Kunnen middels deze inzichten/requirements tot een breed scala aan oplossingen komen om deze vervolgens te testen en fine tunen. </br> Voor de onderzoeksmethodes is onder andere gebruik gemaakt van: </br><ul><li>Enquetes</li><li>Interviews</li><li>Focus groepen</li><li>Interviews</li>Usability Testing</ul>",
           "images": []
         },
         {
+          "sectionTitle": "Gestrande Reiziger - Ervaring vanuit hun oogpunt",
+          "content": "De situatie waar een reiziger zich in bevindt kan lastig te begrijpen zijn. Om meer empathie te krijgen en een beter inlevingsvermogen is het belangrijk om eerst inzichtelijk te krijgen. Deze user Journey is voortgekomen uit gesprekken met reizigers en inzichten vanuit bijvoorbeeld receptionisten en ander personeel. Uiteraard heb ik (tot waar mogelijk) deze ervaring zelf geprobeerd mee te maken.",
+          "images": [
+            {
+              "src": "afbeeldingen/UserjourneyReiziger.jpg",
+              "alt": "UserjourneyGestrandeReiziger"
+            }
+          ]
+        },
+        {
           "sectionTitle": "User Research Insights",
-          "content": "Key user research insights.",
+          "content": "De belangrijkste inzichten zijn uitendelijk gebruikt",
           "images": [
             {
               "src": "afbeeldingen/image6.jpg",
@@ -102,7 +116,7 @@
         },
         {
           "sectionTitle": "Challenges and Solutions",
-          "content": "Challenges faced and solutions.",
+          "content": "Dit project heeft plaatsgevonden tussen 2 corona golven in, hierdoor was het al lastig om reizigers te spreken. Mocht dit er niet zijn dan had dit ook een probleem geweest. De reizigers bevinden zich eenmaal in een stressvolle en onduidelijke situatie. Ze hebben lang moeten wachten, veel moeten regelen en zijn daardoor kapot. Het moment dat ze aankomen bij het hotel willen ze eigenlijk alleen maar rusten en alles laten bezinken. Meewerken aan een onderzoek is daarom het laatste waar ze zin in hebben. Om het gebruik aan deze data op te vangen heb ik zoveel mogelijk gebruikt gemaakt van personen die hier veel ervaring mee hebben, zoals de receptionisten en managers.",
           "images": []
         },
         {
