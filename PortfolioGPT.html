@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your UX Design Portfolio</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Add your custom CSS (optional) -->
+  <link rel="stylesheet" href="sassStyles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pim Goedegebuure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Over mij</a>
+          </li>
+          <li class="nav-item ">
+            <div class="btn-group">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ProjectDetails.html?id=TestProject">TestProject</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="jumbotron jumbotron-fluid bg-primary text-white text-center">
+    <div class="container py-5">
+      <h1 class="display-3 ">Mijn UX Design Portfolio</h1>
+      <p class="lead">Waarin ik meer laat zien dan UX, maar ook mijn passie voor <strong>data, consistancy en
+          research</strong></p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-3 py-md-5">
+    <div class="container">
+      <section class="mb-5 mb-md-3">
+        <h2 class="mb-2">Over mij</h2>
+        <p>
+          Met meer dan 4 jaar gecombineerde ervaring in Technical Support Engineering, QA Testing en UX Design, heb ik
+          mijn vaardigheden in het leveren van uitzonderlijke gebruikerservaringen aangescherpt.
+          Met mijn expertise in internetservices, interne en externe communicatie en prototyping, ben ik gedreven om
+          mijn vaardigheden in gebruikersonderzoek en UX-ontwerp te gebruiken om innovatieve oplossingen te creëren die
+          de tevredenheid van gebruikers en de bruikbaarheid van producten vergroten.
+        </p>
+      </section>
+      <section>
+        <h4 class="mb-2">Skills</h2>
+          <p>Mijn vaardigheden zijn erg breed, dit komt omdat ik graag nieuwe dingen leer of experimenteer met nieuwe
+            tools. Ik beheers onder andere de volgende vaardigheden:</p>
+          <ul id="SkillList">
+            <li>Diverse prototyping tools (Figma, Adobe XD)</li>
+            <li>User research, zowel kwalitatief als kwantitatief</li>
+            <li>Basis kennis online marketing (Analytics, Hotjar)</li>
+            <li>A/B testen met Google Optimize</li>
+          </ul>
+      </section>
+      <section>
+        <h4 class="mb-2">Passies</h2>
+          <p>
+            [Write a brief introduction about yourself, your background, and your passion for UX design.]
+          </p>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Portfolio</h2>
+      <!-- Add a container to hold the projects -->
+      <div class="row" id="projectContainer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="d-flex align-items-center">
+        <h2 class="me-3 me-md-5">Contact Me</h2>
+        <div id="contactUrl" class="ml-5">
+          <button type="button" class="btn btn-primary contact">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto: pimgoedegebuure@gmail.com">Email</a>
+          </button>
+          <button type="button" class="btn btn-primary contact">
+            <i class="bi bi-box-arrow-up-right"></i>
+            <a href="https://www.linkedin.com/in/pim-goedegebuure/" target="_blank">LinkedIn</a>
+          </button>
+        </div>
+      </div></div>
+      
+
+
+  </section>
+
+  <!-- Add Bootstrap JS and jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Fetch the JSON data and populate the projectsOverview
+    fetch('project-details.json')
+      .then(response => response.json())
+      .then(jsonData => { // Add this line to get the jsonData
+        function populateProjectOverview() {
+          const projectOverviewContainer = document.getElementById('projectContainer');
+
+          jsonData.ProjectOverview.Projects.forEach(project => {
+            // Create the project card dynamically
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('col-md-6', 'col-lg-4', 'mb-3', 'd-flex', 'align-items-stretch');
+            projectCard.innerHTML = `
+              
+            
+            <div class="card">
+                <img src="${project.image}" class="card-img-top" alt="${project.imgAltText}">
+                <div class="card-body d-flex flex-column ">
+                  <h5 class="card-title">${project.title}</h5>
+                  <p class="card-text mb-4">${project.description}</p>
+                  <a href="${project.url}" class="btn btn-primary mt-auto align-self-start">Oplossing bekijken</a>
+                </div>
+              </div>
+            
+            `;
+
+            // Append the project card to the container
+            projectOverviewContainer.appendChild(projectCard);
+          });
+        }
+
+        // Call the function to populate project overview
+        populateProjectOverview();
+      })
+      .catch(error => console.error('Error fetching projects:', error));
+  </script>
+</body>
+
+</html>

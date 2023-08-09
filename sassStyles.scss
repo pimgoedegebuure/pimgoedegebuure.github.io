@@ -1,0 +1,60 @@
+$color-Main: #2e2e2e;
+$color-Secondary: #2e2e2e;
+$color-Tertiary: #2e2e2e;
+$font-color: #2e2e2e;
+p{
+    margin:0;
+    padding:0;
+    
+}
+.ContactIcon{
+    max-width:2em;
+    margin-right:0.5em;
+}
+.card{
+    width:100%!important;
+}
+#SkillList {
+    padding: 0;
+}
+#contactUrl{
+    
+    .contact{
+        a{
+            text-decoration: none!important;
+            color:white!important;
+        };
+    }
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+#SkillList li:before {
+    content: "\2714\0020";
+    color: green!important;
+}
+
+.jumbotron,
+.btn-primary {
+    background-color: $color-Main !important;
+    border: none !important;
+}
+
+.btn-primary {
+    &:hover {
+        background-color: #424242 !important;
+    }
+}
+
+.card-title {
+    color: $font-color;
+}
+
+.card-img-top {
+    max-height: 10em;
+    object-fit: cover;
+
+}

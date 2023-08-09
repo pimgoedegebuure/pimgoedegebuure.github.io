@@ -1,0 +1,52 @@
+@charset "UTF-8";
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.ContactIcon {
+  max-width: 2em;
+  margin-right: 0.5em;
+}
+
+.card {
+  width: 100% !important;
+}
+
+#SkillList {
+  padding: 0;
+}
+
+#contactUrl .contact a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#SkillList li:before {
+  content: "✔ ";
+  color: green !important;
+}
+
+.jumbotron,
+.btn-primary {
+  background-color: #2e2e2e !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #424242 !important;
+}
+
+.card-title {
+  color: #2e2e2e;
+}
+
+.card-img-top {
+  max-height: 10em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=sassStyles.css.map */

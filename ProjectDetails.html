@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Detail - Your UX Design Portfolio</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <!-- Add your custom CSS (optional) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar (if you want to include it on the detail page) -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Name</a>
+      <!-- Add your navigation links if needed -->
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <section id="project-detail" class="py-5">
+    <div class="container d-flex justify-content-center">
+     
+        <div class="col-md-10 ">
+          <!-- Add an element to hold the project details -->
+          <div id="projectDetails"></div>
+
+          <!-- Call-to-Action (CTA) -->
+          <p class="mb-5">
+            <a href="PortfolioGPT.html" class="btn btn-primary">Back to Portfolio</a>
+          </p>
+        </div>
+     
+    </div>
+  </section>
+
+  <!-- Add Bootstrap JS and jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+ <script> // Get the project ID from the URL (assuming you are passing the ID as a parameter)
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = urlParams.get('id'); // Assuming you are using "?id=project1" in the URL
+  
+  // Function to create a carousel with multiple images
+  function createImageCarousel(images) {
+    if (images && images.length > 0) {
+      let carouselItems = '';
+      let indicators = '';
+      images.forEach((image, index) => {
+        carouselItems += `
+          <div class="carousel-item${index === 0 ? ' active' : ''}">
+            <img src="${image.src}" alt="${image.alt}" class="img-fluid">
+          </div>
+        `;
+        indicators += `<button type="button" data-bs-target="#ProjectCarousel" data-bs-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></button>`;
+      });
+  
+      return `
+        <div id="ProjectCarousel" class="carousel slide col-md-6" data-bs-ride="carousel ">
+          <div class="carousel-inner">
+            ${carouselItems}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <ol class="carousel-indicators">
+            ${indicators}
+          </ol>
+        </div>
+      `;
+    }
+    return '';
+  }
+  
+  // Fetch the JSON data and populate the project details
+  fetch('project-details.json')
+    .then(response => response.json())
+    .then(data => {
+      const projectDetails = document.getElementById('projectDetails');
+  
+      // Check if the "ProjectDetails" object exists in the JSON data
+      if (data.hasOwnProperty('ProjectDetails')) {
+        const projectData = data['ProjectDetails'];
+  
+        // Check if the project ID exists in the projectData object
+        if (projectData.hasOwnProperty(projectId)) {
+          const project = projectData[projectId];
+  
+          // Create the project detail content dynamically
+          let projectDetailsContent = `<h2 class="mb-4">${project.title}</h2>`;
+  
+          project.sections.forEach(section => {
+            if (section.images && section.images.length > 1) {
+              // Use carousel for sections with multiple images
+              projectDetailsContent += `
+                <div class="mb-4">
+                  <h3>${section.sectionTitle}</h3>
+                  <p>${section.content}</p>
+                  ${createImageCarousel(section.images)}
+                </div>
+              `;
+            } else {
+              // Single image or no images, display as regular section
+              projectDetailsContent += `
+                <div class="mb-4">
+                  <h3>${section.sectionTitle}</h3>
+                  <p>${section.content}</p>
+                  ${section.images && section.images.length === 1 ? `<img src="${section.images[0].src}" alt="${section.images[0].alt}" class="img-fluid col-md-6">` : ''}
+                </div>
+              `;
+            }
+          });
+  
+          projectDetails.innerHTML = projectDetailsContent;
+        } else {
+          // Show a message if the project ID is not found in the projectData object
+          projectDetails.innerHTML = '<p>Project not found.</p>';
+        }
+      } else {
+        // Show a message if the "ProjectDetails" object is missing in the JSON data
+        projectDetails.innerHTML = '<p>Project details not available.</p>';
+      }
+    })
+    .catch(error => console.error('Error fetching project details:', error));
+</script>
+</body>
+
+</html>
