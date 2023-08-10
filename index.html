@@ -27,16 +27,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">Over mij</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item">
             <div class="btn-group">
               <a class="nav-link" href="#portfolio">Portfolio</a>
               <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="visually-hidden">Toggle Dropdown</span>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="ProjectDetails.html?id=TestProject">TestProject</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul id="projectDropdown" class="dropdown-menu">
+                <!-- Placeholder for dynamically populated projects -->
               </ul>
             </div>
           </li>
@@ -161,6 +159,29 @@
         populateProjectOverview();
       })
       .catch(error => console.error('Error fetching projects:', error));
+  </script>
+  
+  <!--Populate navbar portfolio sectoin-->
+  <script>
+    fetch('project-details.json')
+  .then(response => response.json())
+  .then(data => {
+    const projectDropdown = document.getElementById('projectDropdown');
+
+    if (data.hasOwnProperty('ProjectOverview') && data.ProjectOverview.hasOwnProperty('Projects')) {
+      const projects = data.ProjectOverview.Projects;
+      projects.forEach(project => {
+        const dropdownItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.className = 'dropdown-item';
+        link.href = `ProjectDetails.html?id=${project.url}`;
+        link.textContent = project.title;
+        dropdownItem.appendChild(link);
+        projectDropdown.appendChild(dropdownItem);
+      });
+    }
+  })
+  .catch(error => console.error('Error fetching project details:', error));
   </script>
 </body>
 
