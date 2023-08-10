@@ -60,7 +60,7 @@
       });
   
       return `
-        <div id="ProjectCarousel" class="carousel slide col-md-6" data-bs-ride="carousel ">
+        <div id="ProjectCarousel" class="carousel slide col-md-6 p-0" data-bs-ride="carousel ">
           <div class="carousel-inner">
             ${carouselItems}
           </div>
@@ -104,8 +104,12 @@
               projectDetailsContent += `
                 <div class="mb-4">
                   <h3>${section.sectionTitle}</h3>
-                  <p>${section.content}</p>
-                  ${createImageCarousel(section.images)}
+                  <div class='container'>
+                    <div class='row'>
+                      <p class='col p-0'>${section.content}</p>
+                      ${createImageCarousel(section.images)}
+                    </div>
+                  </div>
                 </div>
               `;
             } else {
@@ -113,9 +117,14 @@
               projectDetailsContent += `
                 <div class="mb-4">
                   <h3>${section.sectionTitle}</h3>
-                  <p>${section.content}</p>
-                  ${section.images && section.images.length === 1 ? `<img src="${section.images[0].src}" alt="${section.images[0].alt}" class="img-fluid col-md-6">` : ''}
+                  <div class='container'>
+                    <div class='row'>
+                      <p class='col p-0'>${section.content}</p>
+                      ${section.images && section.images.length === 1 ? `<img src="${section.images[0].src}" alt="${section.images[0].alt}" class="img-fluid col-md-6 p-0">` : ''}
+                    </div>
+                  </div>
                 </div>
+                
               `;
             }
           });
