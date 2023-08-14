@@ -86,19 +86,16 @@
       "sections": [
         {
           "sectionTitle": "Overview",
-          "identifier":"class='ProjectSection'",
           "content": "Tijdens dit project is er uitvoerig onderzoek gedaan naar gestrande Reizigers van Luchthaven Schiphol. Deze reizigers moeten na het annuleren van hun vlucht ondergebracht worden bij onder andere hotel Van der Valk Schiphol. </br> Het doel van dit project is te onderzoeken hoe we deze ervaring aanzienlijk kunnen verbeteren en de gestrande reizigers een verbeterde ervaring kunnen bieden in deze chaotische momenten. </br></br> Dit is gedaan aan de hand van de volgende design challenge: </br> <quote class='lead'>[Insert challenge here]</quote>",
           "images": []
         },
         {
           "sectionTitle": "Design Process",
-          "identifier":"class='ProjectSection'",
           "content": "Tijdens dit project is gebruik gemaakt van de double diamon methode. Door eerst onderzoek te doen naar de eindgebruikers, het probleem en de huidige situatie en hier vervolgens inzichten uit te halen. Kunnen middels deze inzichten/requirements tot een breed scala aan oplossingen komen om deze vervolgens te testen en fine tunen. </br> Voor de onderzoeksmethodes is onder andere gebruik gemaakt van: </br><ul><li>Enquetes</li><li>Interviews</li><li>Focus groepen</li><li>Interviews</li>Usability Testing</ul>",
           "images": []
         },
         {
           "sectionTitle": "Gestrande Reiziger - Ervaring vanuit hun oogpunt",
-          "identifier":"class='ProjectSection'",
           "content": "De situatie waar een reiziger zich in bevindt kan lastig te begrijpen zijn. Om meer empathie te krijgen en een beter inlevingsvermogen is het belangrijk om eerst inzichtelijk te krijgen. Deze user Journey is voortgekomen uit gesprekken met reizigers en inzichten vanuit bijvoorbeeld receptionisten en ander personeel. Uiteraard heb ik (tot waar mogelijk) deze ervaring zelf geprobeerd mee te maken.",
           "images": [
             {
@@ -109,8 +106,7 @@
         },
         {
           "sectionTitle": "User Research Insights",
-          "identifier":"class='ProjectSection'",
-          "content": "Uit de diverse onderzoeken zijn een paar belangrijke punten gekomen die belangrijk zijn geweest voor de uiteindelijke oplossing. </br><ul><li>Reizigers ervaren de gehele situatie als stressvol, chaotisch en vermoeiend.</li><li>Het hotel wilt er geen extra werk door krijgen, maar juist ontnemen. De reizigers kunnen met tientallen/bussen tegelijk aankomen</li><li>Focus groepen</li><li>Interviews</li>Usability Testing</ul> ",
+          "content": "De belangrijkste inzichten zijn uitendelijk gebruikt",
           "images": [
             {
               "src": "afbeeldingen/image6.jpg",
@@ -120,28 +116,25 @@
         },
         {
           "sectionTitle": "Challenges and Solutions",
-          "identifier":"class='ProjectSection'",
           "content": "Dit project heeft plaatsgevonden tussen 2 corona golven in, hierdoor was het al lastig om reizigers te spreken. Mocht dit er niet zijn dan had dit ook een probleem geweest. De reizigers bevinden zich eenmaal in een stressvolle en onduidelijke situatie. Ze hebben lang moeten wachten, veel moeten regelen en zijn daardoor kapot. Het moment dat ze aankomen bij het hotel willen ze eigenlijk alleen maar rusten en alles laten bezinken. Meewerken aan een onderzoek is daarom het laatste waar ze zin in hebben. Om het gebruik aan deze data op te vangen heb ik zoveel mogelijk gebruikt gemaakt van personen die hier veel ervaring mee hebben, zoals de receptionisten en managers.",
           "images": []
         },
         {
           "sectionTitle": "Usability Testing",
-          "identifier":"class='ProjectSection'",
           "content": "Omdat de reizigers zelf niet in staat waren deel te nemen aan het gebruikersonderzoek heb ik gebruik gemaakt van het Van der Valk research panel. Door middel van een oproep in de nieuwsbrief naar deze groep hebben we 8 personen gevonden die deel genomen aan dit onderzoek. Zij hadden allemaal hun eigen ervaring met soortgelijke situaties waarbij ook zij wel eens gestrand waren tijdens hun reis. Hierdoor konden ze zich beter verplaatsen in de situatie van onze doelgroep.",
           "images": []
         },
         {
           "sectionTitle": "<h5>Resultaten</h5>",
-          "identifier":"class='ProjectSection'",
           "content": "Omdat de reizigers zelf niet in staat waren deel te nemen aan het gebruikersonderzoek heb ik gebruik gemaakt van het Van der Valk research panel. Door middel van een oproep in de nieuwsbrief naar deze groep hebben we 8 personen gevonden die deel genomen aan dit onderzoek. Zij hadden allemaal hun eigen ervaring met soortgelijke situaties waarbij ook zij wel eens gestrand waren tijdens hun reis. Hierdoor konden ze zich beter verplaatsen in de situatie van onze doelgroep.",
           "images": []
         },
         {
           "sectionTitle": "Final Design Solutions",
-          "identifier":"class='ProjectSection'",
           "content": "Van het uiteindelijke design is een Interactief prototype gemaakt met Figma, deze bevat uiteraard fictieve data maar moet een weerspiegeling zijn van de realiteit.</br> <iframe style='border: 1px solid rgba(0, 0, 0, 0.1);' width='100%' height='600px' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMxxk6GQHWYZQf8t67S1mUo%2F0.-Voucher-%2526-Activities-Combined%3Fpage-id%3D333%253A26345%26type%3Ddesign%26node-id%3D346-16806%26viewport%3D520%252C82%252C0.1%26t%3DIYcUI33YlkE0uEpN-1%26scaling%3Dscale-down%26starting-point-node-id%3D346%253A16806%26show-proto-sidebar%3D1%26mode%3Ddesign' allowfullscreen></iframe>",
           "images": []
         }
+        
       ]
     },
     "TankDelen": {
