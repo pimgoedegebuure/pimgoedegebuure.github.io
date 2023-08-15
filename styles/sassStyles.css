@@ -1,7 +1,15 @@
 @charset "UTF-8";
+h1, h2, h3, h4, h5 {
+  color: #2e2e2e;
+}
+
 p {
   margin: 0;
   padding: 0;
+}
+
+#portfolio {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .active-link {
@@ -36,8 +44,10 @@ ul {
 }
 
 .jumbotron {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 65) 25%, rgb(0, 0, 65) 75%, rgb(2, 0, 36) 100%);
+  background-color: #cfd9df !important;
+}
+.jumbotron h1, .jumbotron p {
+  color: #2e2e2e;
 }
 
 .btn-primary {

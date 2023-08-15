@@ -2,10 +2,16 @@ $color-Main: #2e2e2e;
 $color-Secondary: #2e2e2e;
 $color-Tertiary: #2e2e2e;
 $font-color: #2e2e2e;
+h1, h2, h3, h4, h5{
+    color:$color-Main;
+}
 p{
     margin:0;
     padding:0;
     
+}
+#portfolio{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 .active-link{
     font-weight: 800;
@@ -40,8 +46,10 @@ ul {
     color: green!important;
 }
 .jumbotron{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,65,1) 25%,rgba(0,0,65,1) 75%, rgba(2,0,36,1) 100%);
+    background-color: #cfd9df!important;
+    h1,p{
+        color: $color-Main;   
+}
 }
 
 .btn-primary {
