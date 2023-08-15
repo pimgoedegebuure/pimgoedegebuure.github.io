@@ -23,8 +23,8 @@
         "url": "ProjectDetails.html?id=TankDelen"
       },
       {
-        "title": "Uptrends App Verbeteringen",
-        "description": "A brief description of Project 3.",
+        "title": "Uptrends App & proces verbeteringen",
+        "description": "Een SAS bedrijf dat snel gegroeid is en gefocust is op programmeren meer leren over User Experience Design en Design Thinking.",
         "image": "project3.jpg",
         "imgAltText": "",
         "url": "ProjectDetails.html?id=UT"
@@ -191,8 +191,8 @@
           "images": []
         },
         {
-          "sectionTitle": "Visie",
-          "content": "Key user research insights.",
+          "sectionTitle": "UX Projecten",
+          "content": "Door capaciteits limitaties binnen Uptrends zijn er beperkte projecten waarin ik heb bijgedragen. Maar door mijn werk als QA tester binnen Uptrends probeer ik altijd mijn steentje bij te dragen en de User experience te verbeteren nog voordat deze beschikbaar komt. Enkele van deze projecten zijn: <br> <ul><li>Opzetten van een Figma Design System</li><li>Single, Inline title editor</li><li></li>",
           "images": []
         }
       ]
