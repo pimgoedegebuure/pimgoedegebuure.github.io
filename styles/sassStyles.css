@@ -24,9 +24,21 @@ p {
 .card {
   width: 100% !important;
 }
+.card .card-title {
+  color: #2e2e2e;
+}
+.card .card-img-top {
+  max-height: 10em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 #SkillList {
   padding: 0;
+}
+#SkillList li:before {
+  content: "✔ ";
+  color: green !important;
 }
 
 #contactUrl .contact a {
@@ -38,15 +50,10 @@ ul {
   list-style-type: none;
 }
 
-#SkillList li:before {
-  content: "✔ ";
-  color: green !important;
-}
-
 .jumbotron {
   background-color: #cfd9df !important;
 }
-.jumbotron h1, .jumbotron p {
+.jumbotron p {
   color: #2e2e2e;
 }
 
@@ -54,17 +61,6 @@ ul {
   background-color: #2e2e2e !important;
   border: none !important;
 }
-
 .btn-primary:hover {
   background-color: #424242 !important;
-}
-
-.card-title {
-  color: #2e2e2e;
-}
-
-.card-img-top {
-  max-height: 10em;
-  -o-object-fit: cover;
-     object-fit: cover;
 }/*# sourceMappingURL=sassStyles.css.map */

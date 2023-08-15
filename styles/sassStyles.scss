@@ -2,36 +2,58 @@ $color-Main: #2e2e2e;
 $color-Secondary: #2e2e2e;
 $color-Tertiary: #2e2e2e;
 $font-color: #2e2e2e;
-h1, h2, h3, h4, h5{
-    color:$color-Main;
+
+h1,h2,h3,h4,h5 {
+    color: $color-Main;
 }
-p{
-    margin:0;
-    padding:0;
-    
+
+p {
+    margin: 0;
+    padding: 0;
+
 }
-#portfolio{
+
+#portfolio {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
-.active-link{
+
+.active-link {
     font-weight: 800;
 }
-.ContactIcon{
-    max-width:2em;
-    margin-right:0.5em;
+
+.ContactIcon {
+    max-width: 2em;
+    margin-right: 0.5em;
 }
-.card{
-    width:100%!important;
+
+.card {
+    width: 100% !important;
+
+    .card-title {
+        color: $font-color;
+    }
+
+    .card-img-top {
+        max-height: 10em;
+        object-fit: cover;
+    }
 }
+
 #SkillList {
     padding: 0;
+
+    li:before {
+        content: "\2714\0020";
+        color: green !important;
+    }
 }
-#contactUrl{
-    
-    .contact{
-        a{
-            text-decoration: none!important;
-            color:white!important;
+
+#contactUrl {
+
+    .contact {
+        a {
+            text-decoration: none !important;
+            color: white !important;
         };
     }
 }
@@ -41,34 +63,18 @@ ul {
     list-style-type: none;
 }
 
-#SkillList li:before {
-    content: "\2714\0020";
-    color: green!important;
-}
-.jumbotron{
-    background-color: #cfd9df!important;
-    h1,p{
-        color: $color-Main;   
-}
+.jumbotron {
+    background-color: #cfd9df !important;
+
+    p {
+        color: $color-Main;
+    }
 }
 
 .btn-primary {
     background-color: $color-Main !important;
     border: none !important;
-}
-
-.btn-primary {
     &:hover {
         background-color: #424242 !important;
     }
-}
-
-.card-title {
-    color: $font-color;
-}
-
-.card-img-top {
-    max-height: 10em;
-    object-fit: cover;
-
 }
