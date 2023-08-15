@@ -39,8 +39,11 @@ ul {
     content: "\2714\0020";
     color: green!important;
 }
+.jumbotron{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,65,1) 25%,rgba(0,0,65,1) 75%, rgba(2,0,36,1) 100%);
+}
 
-.jumbotron,
 .btn-primary {
     background-color: $color-Main !important;
     border: none !important;

@@ -35,7 +35,11 @@ ul {
   color: green !important;
 }
 
-.jumbotron,
+.jumbotron {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 65) 25%, rgb(0, 0, 65) 75%, rgb(2, 0, 36) 100%);
+}
+
 .btn-primary {
   background-color: #2e2e2e !important;
   border: none !important;
