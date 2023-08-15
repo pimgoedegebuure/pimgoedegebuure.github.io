@@ -178,45 +178,21 @@
       ]
     },
     "UT": {
-      "title": "Project 2",
+      "title": "Uptrends UX Thinking ",
       "sections": [
         {
           "sectionTitle": "Overview",
-          "content": "Project 2 overview and description.",
+          "content": "ITRS Uptrends is levert SAS dat met 250+ servers over heel de wereld je webservices kan monitoren. Van API's tot Login/checkout processen het is allemaal mogelijk met de diverse producten die ze leveren. Door de snelle groei van het bedrijf is er weinig aandacht geweest voor User Experience Design of design thinking. Developers zijn ook designers met moqups in paint en geen design system, documentatie of duidelijke guidelines. Gebruikers betrekken bij de ontwikkeling van producten is ook nooit uitgevoerd. ",
           "images": []
         },
         {
-          "sectionTitle": "Design Process",
-          "content": "Design process for Project 2.",
+          "sectionTitle": "Mijn Rol",
+          "content": "Ik ben bij ITRS Uptrends gekomen als Technical Support Engineer maar ben daarnaast ook QA tester en zie mezelf graag als UX ambasadeur. Gezien ik de eerste ben binnen het bedrijf met een opleiding in UX design probeer ik andere teams binnen het bedrijf bewust te maken van deze manier van werken en denken. 'Hoe zou de eindgebruiker deze feature gebruiken' of 'Hoe zou de eindgebruiker deze implementatie ervaring'. Op dit moment zit het voornamelijk in de kleine dingen zoals omgaan met foutmeldingen, Teksten in button en plaatsing van knoppen. Grotere projecten zijn ook opgezet zoals het vormgeven van een beter design proces en het in gebruik nemen van Figma + opzetten van een DesignSystem. ",
           "images": []
         },
         {
-          "sectionTitle": "User Research Insights",
+          "sectionTitle": "Visie",
           "content": "Key user research insights.",
-          "images": [
-            {
-              "src": "afbeeldingen/image8.jpg",
-              "alt": "Image 8"
-            },
-            {
-              "src": "afbeeldingen/image9.jpg",
-              "alt": "Image 9"
-            }
-          ]
-        },
-        {
-          "sectionTitle": "Challenges and Solutions",
-          "content": "Challenges faced and solutions.",
-          "images": []
-        },
-        {
-          "sectionTitle": "Final Design Solutions",
-          "content": "Final design solutions and impact.",
-          "images": []
-        },
-        {
-          "sectionTitle": "Usability Testing Results",
-          "content": "Usability testing results and feedback.",
           "images": []
         }
       ]
