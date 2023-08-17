@@ -23,6 +23,7 @@ p {
 
 .card {
   width: 100% !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .card .card-title {
   color: #2e2e2e;
