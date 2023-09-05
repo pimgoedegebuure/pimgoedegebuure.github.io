@@ -2,13 +2,6 @@
   "ProjectOverview": {
     "Projects": [
       {
-        "title": "TestProject",
-        "description": "This is test project intended to define styling etcetera",
-        "image": "afbeeldingen/FlixbusTest.jpg",
-        "imgAltText": "",
-        "url": "ProjectDetails.html?id=TestProject"
-      },
-      {
         "title": "Valk Digital",
         "description": "Gestrand op schiphol en je hebt een overnachting nodig? Hoe kunnen we middels een digitale service deze stresvolle ervaring verbeteren?",
         "image": "afbeeldingen/FlixbusTest.jpg",
@@ -32,56 +25,7 @@
     ]
   },
   "ProjectDetails": {
-    "TestProject": {
-      "title": "GPT AutomationTest 1",
-      "sections": [
-        {
-          "sectionTitle": "Overview",
-          "content": "",
-          "images": [
-            {
-              "src": "afbeeldingen/FlixbusTest.jpg",
-              "alt": "Image 3"
-            }
-          ]
-        },
-        {
-          "sectionTitle": "Not so Process",
-          "content": "Mploy Associates is een relatief jong bedrijf dat in korte tijd erg gegroeid is. Door Young Talents te koppelen aan ingewikkelde vraagstuken binnen de data, finance & risk en deze de mogelijkheid bieden om binnen Mploy Associates te werken aan hun hard en soft skills krijgen banken en verzekeraars een consultant van top niveau.Bij Mploy Associates wordt alles intern opgepakt en halen zij de expertises die ze nodig hebben zelf in huis om zo niet alleen kwantiteit maar vooral ook kwaliteit te kunnen leveren. Om de communicatie naar aankomende Young Talents naar een hoger niveau te tillen is het noodzakelijk om goed ontworpen HTML emails te versturen. De expertise om deze werkend te krijgen op de vele e-mail clients was er echter nog niet en daarom heb ik deze taak op mij genomen. Zonder enige voorkennis over HTML emails ben ik dit project gestart en heb enkele werkende emails geïmplementeerd.",
-          "images": []
-        },
-        {
-          "sectionTitle": "User Research Insights",
-          "content": "Waar een standaard website bestaat uit DIV elementen, Marging, Paddings, background images en ga zo maar door is een HTML email opgebouwd met techniek uit het jaar 0. Het gebruik maken van tables om zo de vormgeving van je email te maken. Hierbij is het ook nog eens van belang om styling inline toe te voegen en zelfs dan ben je niet gegarandeerd dat alles werkt. Hierdoor was dit voor mij een lastig project om alle ins & outs over te leren.",
-          "images": [
-            {
-              "src": "afbeeldingen/FlixbusTest.jpg",
-              "alt": "Image 3"
-            },
-            {
-              "src": "afbeeldingen/FlixbusTest.jpg",
-              "alt": "Image 3"
-            }
-          ]
-        },
-        {
-          "sectionTitle": "Challenges and Solutions",
-          "content": "Challenges faced and solutions.",
-          "images": []
-        },
-        {
-          "sectionTitle": "Final Design Solutions",
-          "content": "Omdat er veel emails zijn met veel verschillende varianten of kleine aanpassingen op één format is hier een selectie van de emails. Al deze emails zijn opgebouwd met table elementen en uitgebreid getest op verschillende browsers, devices & besturingssystemen. Hierdoor heb ik middels veel testen, research en experimenteren emails gemaakt die werkend zijn op vrijwel iedere email client.",
-          "images": []
-        },
-        {
-          "sectionTitle": "Usability Testing Results",
-          "content": "Usability testing results and feedback.",
-          "images": []
-        }
-      ]
-    },
-    "ValkDigital": {
+     "ValkDigital": {
       "title": "Gestrande Reizigers Van der Valk Schiphol",
       "sections": [
         {
