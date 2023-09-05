@@ -9,13 +9,6 @@
         "url": "ProjectDetails.html?id=ValkDigital"
       },
       {
-        "title": "Tankkosten Delen",
-        "description": "Samen met een huisgenoot een auto delen maar niet elkaars kosten hebben? Op papier bijhouden is onderwets en spreadsheet niet gebruiksvriendelijk.",
-        "image": "project2.jpg",
-        "imgAltText": "",
-        "url": "ProjectDetails.html?id=TankDelen"
-      },
-      {
         "title": "Uptrends App & proces verbeteringen",
         "description": "Een SAS bedrijf dat snel gegroeid is en gefocust is op programmeren meer leren over User Experience Design en Design Thinking.",
         "image": "project3.jpg",
@@ -141,5 +134,14 @@
         }
       ]
     }
+  },
+  "_Comments":{
+    
+      "title": "Tankkosten Delen",
+      "description": "Samen met een huisgenoot een auto delen maar niet elkaars kosten hebben? Op papier bijhouden is onderwets en spreadsheet niet gebruiksvriendelijk.",
+      "image": "project2.jpg",
+      "imgAltText": "",
+      "url": "ProjectDetails.html?id=TankDelen"
+    
   }
 }
