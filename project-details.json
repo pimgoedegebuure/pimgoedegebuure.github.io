@@ -75,42 +75,33 @@
       ]
     },
     "TankDelen": {
-      "title": "Project 2",
+      "title": "Automatisch Tankkosten berekenen",
       "sections": [
         {
-          "sectionTitle": "Overview",
-          "content": "Project 2 overview and description.",
+          "sectionTitle": "Het probleem",
+          "content": "Het delen van een auto met je 2 jongere broertjes kan voor problemen zorgen. Buiten het gewoonlijke 'wie heeft wanneer de auto', komen er ook nog bepaalde kosten bij kijken. Vooral de tankkosten, Ik ga immers niet betalen voor de kilometers die mijn broertjes maken en vice versa gaan zij dat ook niet doen.<br><br> Helaas waren er destijds geen bestaande apps die dit makkelijk konden doen. Tenzij je een abbonement had of individueel je kilometers automatisch wilt declareren bij je werkgever waren er genoeg opties. Door het gebrek aan apps/services hiervoor heb ik zelf iets gemaakt dat de overstap van mijn excel bestandje naar een webbased app kan realiseren. Middels het lowcode platform OutSystems heb ik deze applicatie gebouwd.",
           "images": []
         },
         {
           "sectionTitle": "Design Process",
-          "content": "Design process for Project 2.",
-          "images": []
-        },
-        {
-          "sectionTitle": "User Research Insights",
-          "content": "Key user research insights.",
+          "content": "Het proces begint in dit geval met wat requirements opstellen. Zo moet wil ik graag per persoon bij kunnen houden wat er gereden is, Hoeveel KM totaal en wat de kosten per persoon zijn per tankbeurt. <br> vervolgens opzoek naar bestaande apps, helaas had niet iedereen een Android Toestel en zorgde dat voor wat extra complexiteit. Buiten dit waren er geen apps die dit deden. Je kon eenvoudig in je eentje alles bijhouden of automatisch voor je werkgever/factuur en dergelijke. Helaas niet als gezin onder elkaar dit even regelen. <br><br> Gezien ik al een werkend excel bestandje had dat dit berekende was de wiskunde erachter al geregeld, het nadeel hiervan is dat we handmatig in een boekje bijhielden wie wat had gereden.",
           "images": [
             {
-              "src": "afbeeldingen/image7.jpg",
-              "alt": "Image 7"
-            }
+            "src": "afbeeldingen/TankExcel.jpg",
+            "alt": "Image 7"
+          },
+          {
+            "src": "afbeeldingen/TankBoekje.jpg",
+            "alt": "Image 7"
+          }
+        ]
+        },
+        {
+          "sectionTitle": "Oplossing",
+          "content": "De oplossing was helaas ingewikkelder dan ik had gehoopt. Ik moest zelf aan de slag met een lowcode platform met database capaciteiten om alles te bewaren en berekenen. Outsystems kwam hierin als een goede uit mijn requirements, ondanks de complexiteit was er veel documentatie beschikbaar en een gratis variant. <br> Middels veel Youtube Video's, Fora en ",
+          "images": [
+            
           ]
-        },
-        {
-          "sectionTitle": "Challenges and Solutions",
-          "content": "Challenges faced and solutions.",
-          "images": []
-        },
-        {
-          "sectionTitle": "Final Design Solutions",
-          "content": "Final design solutions and impact.",
-          "images": []
-        },
-        {
-          "sectionTitle": "Usability Testing Results",
-          "content": "Usability testing results and feedback.",
-          "images": []
         }
       ]
     },
