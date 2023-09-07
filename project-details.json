@@ -19,6 +19,7 @@
   },
   "ProjectDetails": {
      "ValkDigital": {
+      "PageTitle": "Van der Valk",
       "title": "Gestrande Reizigers Van der Valk Schiphol",
       "sections": [
         {
@@ -106,6 +107,7 @@
       ]
     },
     "UT": {
+      "PageTitle": "Uptrends",
       "title": "Uptrends UX Thinking ",
       "sections": [
         {
