@@ -14,7 +14,7 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Detail - Your UX Design Portfolio</title>
+  <title id="projectTitle">Project Details</title>
   <!-- Add Bootstrap CSS link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
   <!-- Add your custom CSS (optional) -->
@@ -207,6 +207,38 @@ fetch('project-details.json')
     }
   })
   .catch(error => console.error('Error fetching project details:', error));
+  
+  function updatePageTitle(projectId) {
+  // Fetch the JSON data and populate the project details
+  fetch('project-details.json')
+    .then(response => response.json())
+    .then(data => {
+      // Check if the "ProjectDetails" object exists in the JSON data
+      if (data.hasOwnProperty('ProjectDetails')) {
+        const projectData = data['ProjectDetails'];
+
+        // Check if the project ID exists in the projectData object
+        if (projectData.hasOwnProperty(projectId)) {
+          const project = projectData[projectId];
+
+          // Set the page title to the project title
+          document.title = project.PageTitle;
+        } else {
+          // Show a default title if the project ID is not found in the projectData object
+          document.title = 'Project Page';
+        }
+      } else {
+        // Show a default title if the "ProjectDetails" object is missing in the JSON data
+        document.title = 'Project Page';
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching project details:', error);
+      // Show a default title in case of an error
+      document.title = 'Project Page';
+    });
+}
+updatePageTitle(projectId);
 </script>
 </body>
 
