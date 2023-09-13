@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <!--Analytics-->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75H8RHW3P3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-75H8RHW3P3');
-</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T6MXGRC8');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UX Design Portfolio</title>
@@ -23,7 +23,10 @@
 </head>
 
 <body>
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6MXGRC8" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
@@ -92,8 +95,9 @@
       <section>
         <h4 class="mb-2">Passies</h2>
           <p>
-            Ik ben altijd enthousiast om nieuwe dingen te leren en mijn kennis te verbreden. Zo ben ik regelmatig bezig met mijn Raspberry Pi en Homeassistant om langzaam aan een smart home neer te zetten. 
-            
+            Ik ben altijd enthousiast om nieuwe dingen te leren en mijn kennis te verbreden. Zo ben ik regelmatig bezig
+            met mijn Raspberry Pi en Homeassistant om langzaam aan een smart home neer te zetten.
+
           </p>
       </section>
 
@@ -115,19 +119,20 @@
     <div class="container">
       <div class="col-12 col-md-8 col-lg-6">
         <div class="d-flex align-items-center">
-        <h2 class="me-3 me-md-5">Contact Me</h2>
-        <div id="contactUrl" class="ml-5">
-          <button type="button" class="btn btn-primary contact">
-            <i class="bi bi-envelope-fill"></i>
-            <a href="mailto: pimgoedegebuure@gmail.com">Email</a>
-          </button>
-          <button type="button" class="btn btn-primary contact">
-            <i class="bi bi-box-arrow-up-right"></i>
-            <a href="https://www.linkedin.com/in/pim-goedegebuure/" target="_blank">LinkedIn</a>
-          </button>
+          <h2 class="me-3 me-md-5">Contact Me</h2>
+          <div id="contactUrl" class="ml-5">
+            <button type="button" class="btn btn-primary contact">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto: pimgoedegebuure@gmail.com">Email</a>
+            </button>
+            <button type="button" class="btn btn-primary contact">
+              <i class="bi bi-box-arrow-up-right"></i>
+              <a href="https://www.linkedin.com/in/pim-goedegebuure/" target="_blank">LinkedIn</a>
+            </button>
+          </div>
         </div>
-      </div></div>
-      
+      </div>
+
 
 
   </section>
@@ -177,13 +182,13 @@
     // Get the project ID from the URL parameter
     const urlParams = new URLSearchParams(window.location.search);
     const activeProjectId = urlParams.get('id');
-    
+
     // Fetch the JSON data and populate the navigation bar
     fetch('project-details.json')
       .then(response => response.json())
       .then(data => {
         const projectDropdown = document.getElementById('projectDropdown');
-    
+
         if (data.hasOwnProperty('ProjectOverview') && data.ProjectOverview.hasOwnProperty('Projects')) {
           const projects = data.ProjectOverview.Projects;
           projects.forEach(project => {
@@ -192,19 +197,19 @@
             link.className = 'dropdown-item';
             link.href = project.url;
             link.textContent = project.title;
-            
+
             // Check if the current project ID matches the active project ID and add a class for active styling
             if (project.url.includes(activeProjectId)) {
               link.classList.add('active-link'); // Add a class for styling
             }
-            
+
             dropdownItem.appendChild(link);
             projectDropdown.appendChild(dropdownItem);
           });
         }
       })
       .catch(error => console.error('Error fetching project details:', error));
-    </script>
+  </script>
 </body>
 
 </html>

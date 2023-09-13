@@ -2,7 +2,17 @@
 <html lang="en">
 
 <head>
-  
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T6MXGRC8');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="projectTitle">Project Details</title>
@@ -13,7 +23,10 @@
 </head>
 
 <body>
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6MXGRC8" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="index.html">Pim Goedegebuure</a>
@@ -48,43 +61,43 @@
   <!-- Project Detail Section -->
   <section id="project-detail" class="py-5">
     <div class="container d-flex justify-content-center">
-     
-        <div class="col-md-10 ">
-          <!-- Add an element to hold the project details -->
-          <div id="projectDetails"></div>
 
-          <!-- Call-to-Action (CTA) -->
-          <p class="mb-5">
-            <a href="index.html" class="btn btn-primary">Terug naar Overzicht</a>
-          </p>
-        </div>
-     
+      <div class="col-md-10 ">
+        <!-- Add an element to hold the project details -->
+        <div id="projectDetails"></div>
+
+        <!-- Call-to-Action (CTA) -->
+        <p class="mb-5">
+          <a href="index.html" class="btn btn-primary">Terug naar Overzicht</a>
+        </p>
+      </div>
+
     </div>
   </section>
 
   <!-- Add Bootstrap JS and jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
- <script> 
- // Get the project ID from the URL (assuming you are passing the ID as a parameter)
-  const urlParamss = new URLSearchParams(window.location.search);
-  const projectId = urlParamss.get('id'); // Assuming you are using "?id=project1" in the URL
-  
-  // Function to create a carousel with multiple images
-  function createImageCarousel(images) {
-    if (images && images.length > 0) {
-      let carouselItems = '';
-      let indicators = '';
-      images.forEach((image, index) => {
-        carouselItems += `
+  <script>
+    // Get the project ID from the URL (assuming you are passing the ID as a parameter)
+    const urlParamss = new URLSearchParams(window.location.search);
+    const projectId = urlParamss.get('id'); // Assuming you are using "?id=project1" in the URL
+
+    // Function to create a carousel with multiple images
+    function createImageCarousel(images) {
+      if (images && images.length > 0) {
+        let carouselItems = '';
+        let indicators = '';
+        images.forEach((image, index) => {
+          carouselItems += `
           <div class="carousel-item${index === 0 ? ' active' : ''}">
             <img src="${image.src}" alt="${image.alt}" class="img-fluid">
           </div>
         `;
-        indicators += `<button type="button" data-bs-target="#ProjectCarousel" data-bs-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></button>`;
-      });
-  
-      return `
+          indicators += `<button type="button" data-bs-target="#ProjectCarousel" data-bs-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></button>`;
+        });
+
+        return `
         <div id="ProjectCarousel" class="carousel slide col-md-6 p-0" data-bs-ride="carousel ">
           <div class="carousel-inner">
             ${carouselItems}
@@ -102,31 +115,31 @@
           </ol>
         </div>
       `;
+      }
+      return '';
     }
-    return '';
-  }
-  
-  // Fetch the JSON data and populate the project details
-  fetch('project-details.json')
-    .then(response => response.json())
-    .then(data => {
-      const projectDetails = document.getElementById('projectDetails');
-  
-      // Check if the "ProjectDetails" object exists in the JSON data
-      if (data.hasOwnProperty('ProjectDetails')) {
-        const projectData = data['ProjectDetails'];
-  
-        // Check if the project ID exists in the projectData object
-        if (projectData.hasOwnProperty(projectId)) {
-          const project = projectData[projectId];
-  
-          // Create the project detail content dynamically
-          let projectDetailsContent = `<h2 class="mb-4">${project.title}</h2>`;
-  
-          project.sections.forEach(section => {
-            if (section.images && section.images.length > 1) {
-              // Use carousel for sections with multiple images
-              projectDetailsContent += `
+
+    // Fetch the JSON data and populate the project details
+    fetch('project-details.json')
+      .then(response => response.json())
+      .then(data => {
+        const projectDetails = document.getElementById('projectDetails');
+
+        // Check if the "ProjectDetails" object exists in the JSON data
+        if (data.hasOwnProperty('ProjectDetails')) {
+          const projectData = data['ProjectDetails'];
+
+          // Check if the project ID exists in the projectData object
+          if (projectData.hasOwnProperty(projectId)) {
+            const project = projectData[projectId];
+
+            // Create the project detail content dynamically
+            let projectDetailsContent = `<h2 class="mb-4">${project.title}</h2>`;
+
+            project.sections.forEach(section => {
+              if (section.images && section.images.length > 1) {
+                // Use carousel for sections with multiple images
+                projectDetailsContent += `
                 <div class="mb-4">
                   <h3>${section.sectionTitle}</h3>
                   <div class='container'>
@@ -137,9 +150,9 @@
                   </div>
                 </div>
               `;
-            } else {
-              // Single image or no images, display as regular section
-              projectDetailsContent += `
+              } else {
+                // Single image or no images, display as regular section
+                projectDetailsContent += `
                 <div class="mb-4">
                   <h3>${section.sectionTitle}</h3>
                   <div class='container'>
@@ -151,95 +164,85 @@
                 </div>
                 
               `;
-            }
-          });
-  
-          projectDetails.innerHTML = projectDetailsContent;
+              }
+            });
+
+            projectDetails.innerHTML = projectDetailsContent;
+          } else {
+            // Show a message if the project ID is not found in the projectData object
+            projectDetails.innerHTML = '<p>Project not found.</p>';
+          }
         } else {
-          // Show a message if the project ID is not found in the projectData object
-          projectDetails.innerHTML = '<p>Project not found.</p>';
+          // Show a message if the "ProjectDetails" object is missing in the JSON data
+          projectDetails.innerHTML = '<p>Project details not available.</p>';
         }
-      } else {
-        // Show a message if the "ProjectDetails" object is missing in the JSON data
-        projectDetails.innerHTML = '<p>Project details not available.</p>';
-      }
-    })
-    .catch(error => console.error('Error fetching project details:', error));
-</script>
-<!--Populate Navigation projects-->
-<script>
-// Get the project ID from the URL parameter
-const urlParams = new URLSearchParams(window.location.search);
-const activeProjectId = urlParams.get('id');
-
-// Fetch the JSON data and populate the navigation bar
-fetch('project-details.json')
-  .then(response => response.json())
-  .then(data => {
-    const projectDropdown = document.getElementById('projectDropdown');
-
-    if (data.hasOwnProperty('ProjectOverview') && data.ProjectOverview.hasOwnProperty('Projects')) {
-      const projects = data.ProjectOverview.Projects;
-      projects.forEach(project => {
-        const dropdownItem = document.createElement('li');
-        const link = document.createElement('a');
-        link.className = 'dropdown-item';
-        link.href = project.url;
-        link.textContent = project.title;
-        
-        // Check if the current project ID matches the active project ID and add a class for active styling
-        if (project.url.includes(activeProjectId)) {
-          link.classList.add('active-link'); // Add a class for styling
-        }
-        
-        dropdownItem.appendChild(link);
-        projectDropdown.appendChild(dropdownItem);
-      });
-    }
-  })
-  .catch(error => console.error('Error fetching project details:', error));
-  
-  function updatePageTitle(projectId) {
-  // Fetch the JSON data and populate the project details
-  fetch('project-details.json')
-    .then(response => response.json())
-    .then(data => {
-      // Check if the "ProjectDetails" object exists in the JSON data
-      if (data.hasOwnProperty('ProjectDetails')) {
-        const projectData = data['ProjectDetails'];
-
-        // Check if the project ID exists in the projectData object
-        if (projectData.hasOwnProperty(projectId)) {
-          const project = projectData[projectId];
-
-          // Set the page title to the project title
-          document.title = project.PageTitle;
-        } else {
-          // Show a default title if the project ID is not found in the projectData object
-          document.title = 'Project Page';
-        }
-      } else {
-        // Show a default title if the "ProjectDetails" object is missing in the JSON data
-        document.title = 'Project Page';
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching project details:', error);
-      // Show a default title in case of an error
-      document.title = 'Project Page';
-    });
-}
-updatePageTitle(projectId);
-</script>
-  <!--Analytics-->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75H8RHW3P3"></script>
+      })
+      .catch(error => console.error('Error fetching project details:', error));
+  </script>
+  <!--Populate Navigation projects-->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-75H8RHW3P3');
+    // Get the project ID from the URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const activeProjectId = urlParams.get('id');
+
+    // Fetch the JSON data and populate the navigation bar
+    fetch('project-details.json')
+      .then(response => response.json())
+      .then(data => {
+        const projectDropdown = document.getElementById('projectDropdown');
+
+        if (data.hasOwnProperty('ProjectOverview') && data.ProjectOverview.hasOwnProperty('Projects')) {
+          const projects = data.ProjectOverview.Projects;
+          projects.forEach(project => {
+            const dropdownItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.className = 'dropdown-item';
+            link.href = project.url;
+            link.textContent = project.title;
+
+            // Check if the current project ID matches the active project ID and add a class for active styling
+            if (project.url.includes(activeProjectId)) {
+              link.classList.add('active-link'); // Add a class for styling
+            }
+
+            dropdownItem.appendChild(link);
+            projectDropdown.appendChild(dropdownItem);
+          });
+        }
+      })
+      .catch(error => console.error('Error fetching project details:', error));
+
+    function updatePageTitle(projectId) {
+      // Fetch the JSON data and populate the project details
+      fetch('project-details.json')
+        .then(response => response.json())
+        .then(data => {
+          // Check if the "ProjectDetails" object exists in the JSON data
+          if (data.hasOwnProperty('ProjectDetails')) {
+            const projectData = data['ProjectDetails'];
+
+            // Check if the project ID exists in the projectData object
+            if (projectData.hasOwnProperty(projectId)) {
+              const project = projectData[projectId];
+
+              // Set the page title to the project title
+              document.title = project.PageTitle;
+            } else {
+              // Show a default title if the project ID is not found in the projectData object
+              document.title = 'Project Page';
+            }
+          } else {
+            // Show a default title if the "ProjectDetails" object is missing in the JSON data
+            document.title = 'Project Page';
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching project details:', error);
+          // Show a default title in case of an error
+          document.title = 'Project Page';
+        });
+    }
+    updatePageTitle(projectId);
   </script>
 </body>
 
