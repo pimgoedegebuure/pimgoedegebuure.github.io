@@ -3,14 +3,22 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-T6MXGRC8');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T6MXGRC8');
+  </script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,14 +49,16 @@
             <a class="nav-link" href="index.html/#about">Over mij</a>
           </li>
           <li class="nav-item">
-            <div class="btn-group">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </a>
-              <ul id="projectDropdown" class="dropdown-menu">
-                <!-- Placeholder for dynamically populated projects -->
-              </ul>
+            <div class="btn-group dropdown-center d-flex flex-wrap">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link dropdown-toggle dropdown-toggle-split p-xs-2 p-sm-1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>    
+                <div class="flex-break"><!--BreakPointForhamburgerFlex!--></div>
+                <ul id="projectDropdown" class="dropdown-menu">
+                  <!-- Placeholder for dynamically populated projects -->
+                </ul>
             </div>
           </li>
           <li class="nav-item">
@@ -119,7 +129,7 @@
     <div class="container">
       <div class="col-12 col-md-8 col-lg-6">
         <div class="d-flex align-items-center">
-          <h2 class="me-3 me-md-5">Contact Me</h2>
+          <h2 class="mb-0 me-3 me-md-5">Contact Me</h2>
           <div id="contactUrl" class="ml-5">
             <button type="button" class="btn btn-primary contact">
               <i class="bi bi-envelope-fill"></i>
