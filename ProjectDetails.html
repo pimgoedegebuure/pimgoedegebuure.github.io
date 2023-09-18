@@ -41,15 +41,15 @@
           </li>
           <li class="nav-item">
             <div class="btn-group dropdown-center d-flex flex-wrap">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link dropdown-toggle dropdown-toggle-split p-xs-2 p-sm-1" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </a>    
-                <div class="flex-break"><!--BreakPointForhamburgerFlex!--></div>
-                <ul id="projectDropdown" class="dropdown-menu">
-                  <!-- Placeholder for dynamically populated projects -->
-                </ul>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split p-xs-2 p-sm-1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </a>
+              <div class="flex-break"><!--BreakPointForhamburgerFlex!--></div>
+              <ul id="projectDropdown" class="dropdown-menu">
+                <!-- Placeholder for dynamically populated projects -->
+              </ul>
             </div>
           </li>
           <li class="nav-item">
@@ -76,6 +76,20 @@
 
     </div>
   </section>
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="" alt="" id="enlargedImage" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Add Bootstrap JS and jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -120,6 +134,7 @@
       }
       return '';
     }
+    
 
     // Fetch the JSON data and populate the project details
     fetch('project-details.json')
@@ -180,6 +195,24 @@
         }
       })
       .catch(error => console.error('Error fetching project details:', error));
+  </script>
+  <script>
+    function populateModal(imageSrc, imageAlt) {
+      const modalImage = document.getElementById('enlargedImage');
+      modalImage.src = imageSrc;
+      modalImage.alt = imageAlt;
+    }
+
+    // Attach click event listeners to images
+    document.addEventListener('click', function (event) {
+      if (event.target && event.target.tagName === 'IMG') {
+        const imageSrc = event.target.src;
+        const imageAlt = event.target.alt;
+        populateModal(imageSrc, imageAlt);
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+      }
+    });
   </script>
   <!--Populate Navigation projects-->
   <script>
