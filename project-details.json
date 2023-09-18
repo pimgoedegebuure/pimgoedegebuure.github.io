@@ -37,8 +37,12 @@
           "content": "De situatie waar een reiziger zich in bevindt kan lastig te begrijpen zijn. Om meer empathie te krijgen en een beter inlevingsvermogen is het belangrijk om eerst inzichtelijk te krijgen. Deze user Journey is voortgekomen uit gesprekken met reizigers en inzichten vanuit bijvoorbeeld receptionisten en ander personeel. Uiteraard heb ik (tot waar mogelijk) deze ervaring zelf geprobeerd mee te maken.",
           "images": [
             {
-              "src": "afbeeldingen/UserjourneyReiziger.jpg",
+              "src": "afbeeldingen/PF_UserJourney.jpeg",
               "alt": "UserjourneyGestrandeReiziger"
+            },
+            {
+              "src":"afbeeldingen/PF_BeTheUserLuchthaven.jpeg",
+              "alt":"Be The User Journey"
             }
           ]
         },
