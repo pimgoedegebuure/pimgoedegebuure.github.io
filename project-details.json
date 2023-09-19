@@ -29,7 +29,7 @@
         },
         {
           "sectionTitle": "Design Process",
-          "content": "Tijdens dit project is gebruik gemaakt van de double diamon methode. Door eerst onderzoek te doen naar de eindgebruikers, het probleem en de huidige situatie en hier vervolgens inzichten uit te halen. Kunnen middels deze inzichten/requirements tot een breed scala aan oplossingen komen om deze vervolgens te testen en fine tunen. </br> Voor de onderzoeksmethodes is onder andere gebruik gemaakt van: </br><ul><li>Enquetes</li><li>Interviews</li><li>Focus groepen</li><li>Interviews</li>Usability Testing</ul>",
+          "content": "Tijdens dit project is gebruik gemaakt van de double diamon methode. Door eerst onderzoek te doen naar de eindgebruikers, het probleem en de huidige situatie en hier vervolgens inzichten uit te halen. Kunnen middels deze inzichten/requirements tot een breed scala aan oplossingen komen om deze vervolgens te testen en fine tunen. </br> Voor de onderzoeksmethodes is onder andere gebruik gemaakt van: </br><ul class='SummaryList'><li>Enquetes</li><li>Interviews</li><li>Focus groepen</li><li>Interviews</li><li>Usability Testing</li></ul>",
           "images": []
         },
         {
@@ -37,7 +37,7 @@
           "content": "De situatie waar een reiziger zich in bevindt kan lastig te begrijpen zijn. Om meer empathie te krijgen en een beter inlevingsvermogen is het belangrijk om eerst inzichtelijk te krijgen. Deze user Journey is voortgekomen uit gesprekken met reizigers en inzichten vanuit bijvoorbeeld receptionisten en ander personeel. Uiteraard heb ik (tot waar mogelijk) deze ervaring zelf geprobeerd mee te maken.",
           "images": [
             {
-              "src": "afbeeldingen/PF_UserJourney.jpeg",
+              "src": "afbeeldingen/PF_UserJourney_Cut.jpeg",
               "alt": "UserjourneyGestrandeReiziger"
             },
             {
@@ -48,7 +48,7 @@
         },
         {
           "sectionTitle": "User Research Insights",
-          "content": "De belangrijkste inzichten zijn uitendelijk gebruikt",
+          "content": "Het gehele project is veel omvattend geweest en varieerde van onderzoek naar processen binnen Van der Valk, processen binnen Schiphol en alle betrokkenen. De belangrijkste inzichten die hebben bijgedragen aan de oplossing zijn als volgt:<br><br><ul class='SummaryList'><li>Voordat de reiziger bij het hotel is kunnen er enkele uren na annulering verstreken zijn. De reiziger is moe, gefrustreerd en gestrest (be the user, fly on the wall, interviews)</li><li>De communicatie van de luchtvaartmaatschappij naar de reizigers kan erg summier zijn (Interviews, Enquete)</li><li>De Reizigers hebben veel vragen over het proces, het hotel en soms ook over zaken als een huisarts.</li><li>Persoonlijk contact is voor de reiziger een belangrijk moment, het gehele proces digitaliseren is hierdoor geen optie</li></ul>",
           "images": [
             {
               "src": "afbeeldingen/image6.jpg",
