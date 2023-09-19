@@ -11,7 +11,7 @@
       {
         "title": "Uptrends",
         "description": "Een SAS bedrijf dat snel gegroeid is en gefocust is op programmeren meer leren over User Experience Design en Design Thinking.",
-        "image": "afbeeldingen/FlixbusTest.jpg",
+        "image": "afbeeldingen/Uptrends.png",
         "imgAltText": "",
         "url": "ProjectDetails.html?id=UT"
       }
@@ -29,7 +29,7 @@
         },
         {
           "sectionTitle": "Design Process",
-          "content": "Tijdens dit project is gebruik gemaakt van de double diamon methode. Door eerst onderzoek te doen naar de eindgebruikers, het probleem en de huidige situatie en hier vervolgens inzichten uit te halen. Kunnen middels deze inzichten/requirements tot een breed scala aan oplossingen komen om deze vervolgens te testen en fine tunen. </br> Voor de onderzoeksmethodes is onder andere gebruik gemaakt van: </br><ul class='SummaryList'><li>Enquetes</li><li>Interviews</li><li>Focus groepen</li><li>Interviews</li><li>Usability Testing</li></ul>",
+          "content": "Tijdens dit project is gebruik gemaakt van de double diamond methode. Door eerst onderzoek te doen naar de eindgebruikers, het probleem en de huidige situatie en hier vervolgens inzichten uit te halen. Kunnen middels deze inzichten/requirements tot een breed scala aan oplossingen komen om deze vervolgens te testen en fine tunen. </br> Voor de onderzoeksmethodes is onder andere gebruik gemaakt van: </br><ul class='SummaryList'><li>Enquetes</li><li>Interviews</li><li>Focus groepen</li><li>Interviews</li><li>Usability Testing</li></ul>",
           "images": []
         },
         {
@@ -51,8 +51,6 @@
           "content": "Het gehele project is veel omvattend geweest en varieerde van onderzoek naar processen binnen Van der Valk, processen binnen Schiphol en alle betrokkenen. De belangrijkste inzichten die hebben bijgedragen aan de oplossing zijn als volgt:<br><br><ul class='SummaryList'><li>Voordat de reiziger bij het hotel is kunnen er enkele uren na annulering verstreken zijn. De reiziger is moe, gefrustreerd en gestrest (be the user, fly on the wall, interviews)</li><li>De communicatie van de luchtvaartmaatschappij naar de reizigers kan erg summier zijn (Interviews, Enquete)</li><li>De Reizigers hebben veel vragen over het proces, het hotel en soms ook over zaken als een huisarts.</li><li>Persoonlijk contact is voor de reiziger een belangrijk moment, het gehele proces digitaliseren is hierdoor geen optie</li></ul>",
           "images": [
             {
-              "src": "afbeeldingen/image6.jpg",
-              "alt": "Image 6"
             }
           ]
         },
