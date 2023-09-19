@@ -116,17 +116,17 @@
       "sections": [
         {
           "sectionTitle": "Overview",
-          "content": "ITRS Uptrends is levert SAS dat met 250+ servers over heel de wereld je webservices kan monitoren. Van API's tot Login/checkout processen het is allemaal mogelijk met de diverse producten die ze leveren. Door de snelle groei van het bedrijf is er weinig aandacht geweest voor User Experience Design of design thinking. Developers zijn ook designers met moqups in paint en geen design system, documentatie of duidelijke guidelines. Gebruikers betrekken bij de ontwikkeling van producten is ook nooit uitgevoerd. ",
+          "content": "ITRS Uptrends software as a service dat met 250+ servers over heel de wereld je webservices kan monitoren. Van API's tot Login/checkout processen het is allemaal mogelijk met de diverse producten die ze leveren. Door de snelle groei van het bedrijf is er weinig aandacht geweest voor User Experience Design of design thinking. Developers zijn ook designers met moqups in paint en geen design system, documentatie of duidelijke guidelines. Gebruikers betrekken bij de ontwikkeling van producten is ook nooit uitgevoerd. ",
           "images": []
         },
         {
           "sectionTitle": "Mijn Rol",
-          "content": "Ik ben bij ITRS Uptrends gekomen als Technical Support Engineer maar ben daarnaast ook QA tester en zie mezelf graag als UX ambasadeur. Gezien ik de eerste ben binnen het bedrijf met een opleiding in UX design probeer ik andere teams binnen het bedrijf bewust te maken van deze manier van werken en denken. 'Hoe zou de eindgebruiker deze feature gebruiken' of 'Hoe zou de eindgebruiker deze implementatie ervaring'. Op dit moment zit het voornamelijk in de kleine dingen zoals omgaan met foutmeldingen, Teksten in button en plaatsing van knoppen. Grotere projecten zijn ook opgezet zoals het vormgeven van een beter design proces en het in gebruik nemen van Figma + opzetten van een DesignSystem. ",
+          "content": "Ik ben bij ITRS Uptrends gekomen als Technical Support Engineer maar ben daarnaast ook QA tester en zie mezelf graag als UX ambasadeur. Gezien ik de eerste ben binnen het bedrijf met een opleiding in UX design probeer ik andere teams binnen het bedrijf bewust te maken van deze manier van werken en denken. 'Hoe zou de eindgebruiker deze feature gebruiken' of 'Hoe zou de eindgebruiker deze implementatie ervaring'. Op dit moment zit het voornamelijk in de kleine dingen zoals omgaan met foutmeldingen, Teksten in button en plaatsing van knoppen. Grotere projecten zijn ook opgezet zoals het vormgeven van een beter design proces en het in gebruik nemen van Figma samen met het opzetten van een DesignSystem. Op dit moment is onze code waarheid en alle VUE componenten zijn onze source of truth. Echter is onze codebase wat rommelig en zijn er van dezelfde componenten meerdere varianten.<br><br> Door het actief gebruiken van Figma en het Designsystem dat we hierin hebben hopen we gestructureerder te werk te kunnen gaan en het maken van snelle moqups voor iedereen toegankelijk te maken. ",
           "images": []
         },
         {
           "sectionTitle": "UX Projecten",
-          "content": "Door capaciteits limitaties binnen Uptrends zijn er beperkte projecten waarin ik heb bijgedragen. Maar door mijn werk als QA tester binnen Uptrends probeer ik altijd mijn steentje bij te dragen en de User experience te verbeteren nog voordat deze beschikbaar komt. Enkele van deze projecten zijn: <br> <ul><li>Opzetten van een Figma Design System</li><li>Single, Inline title editor</li><li></li>",
+          "content": "Door mijn werk als QA engineer/UX designer bij uptrends heb ik mogen bijdragen aan de grotere projecten en redesigns van bestaande features. Mijn contributie ligt hierin voornamelijk in het voorzien van feedback en het maken van nieuwe ontwerpen. Het specificeren van die requirements, userflows en wensen/behoeften van de eindgebruikers is helaas onderdeel geweest van ons product management team.",
           "images": []
         }
       ]
